@@ -16,6 +16,12 @@ class Car():
     def to_repair(self, percent_repair: int) -> None:
         self.amount_kilometres += 10000*percent_repair//100
 
+
+class Truck(Car):
+    def __init__(self) -> None:
+        super()
+
+
 def calculate(random_value: int = 0) -> int:
     return random_value**random_value
 
